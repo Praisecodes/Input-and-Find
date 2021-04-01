@@ -12,6 +12,6 @@ certain words form that list created by the user.
  
 NOTE: This code will be written to be extremely beginner friendly.
  
-DATE: 29th of March 2021.
+DATE: 1st of April 2021.
 LEGAL PROPERTY OF PRAISE CODES.
 ALL RIGHTS RESERVED.
