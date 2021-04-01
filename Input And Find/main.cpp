@@ -71,7 +71,6 @@ int main()
         break;
 
     case 'N':
-        system("pause");
         break;
 
     default:
