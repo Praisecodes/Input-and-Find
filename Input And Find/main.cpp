@@ -11,7 +11,7 @@
 *
 * NOTE: This code will be written to be extremely beginner friendly.
 *
-* DATE: 1st of April 2021.
+* DATE: 29th of March 2021.
 * LEGAL PROPERTY OF PRAISE CODES.
 * ALL RIGHTS RESERVED.
 */
@@ -50,21 +50,22 @@ int main()
             std::cout << "Please enter the word you would like to search for: ";
             std::cin >> Search;
 
+            int endOfInput = Size-1;
+
             for (int e = 1; e < Size; e++)
             {
-                if(Words[e] == Search)
+                if(Words[e] != Search && e == endOfInput)
                 {
-                    std::cout << "Your word \"" << Words[e] << "\" located at space " << e << std::endl;
+                    std::cout << "No match for your word\n";
                     break;
                 }
                 else{
-                    continue;
-                    if(e==Size)
+                    if(Words[e] == Search)
                     {
-                        std::cout << "Your word does not match list of words you gave\n";
+                        std::cout << "Your word \"" << Words[e] << "\" located at space " << e << std::endl;
+                        break;
                     }
                 }
-                system("pause");
             }
         }
         break;
@@ -77,6 +78,8 @@ int main()
         std::cout << "Your answer is invalid\n";
         break;
     }
+
+    system("pause");
 
     return 0;
 }
